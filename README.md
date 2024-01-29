@@ -5,17 +5,18 @@
 - [Evol-character 数据集](#evol-character-数据集)
   - [](#)
   - [下载数据集](#下载数据集)
-  - [与现有数据集对比](#与现有数据集对比)
   - [数据生成框架](#数据生成框架)
   - [数据结构](#数据结构)
+  - [与现有数据集对比](#与现有数据集对比)
+    - [现有数据集](#现有数据集)
+    - [我们的优势](#我们的优势)
 ## 下载数据集
 
 在huggingface中下载数据集: 
 [![English](https://img.shields.io/badge/Download-Huggingface-yellow)](https://huggingface.co/datasets/bai-roleplay/evol-character)
 
-## 与现有数据集对比
 
-
+1270个角色来自于对PIPPA数据集的翻译
 ## 数据生成框架
 ![Local Image](/assets/flowchart.png)
 
@@ -106,3 +107,18 @@
         ]
     }
    ```
+
+
+## 与现有数据集对比
+
+### 现有数据集
+
+|链接|描述|
+|---|---|
+|[character_AI_open](https://github.com/Minami-su/character_AI_open)|基于self-instruct生成的多轮对话roleplay数据|
+|[BelleGroup/generated_chat_0.4M](https://huggingface.co/datasets/BelleGroup/generated_chat_0.4M)|包含约40万条由BELLE项目生成的个性化角色对话数据，包含角色介绍|
+|[Chat-Haruhi-Suzumiya](https://github.com/LC1332/Chat-Haruhi-Suzumiya)|32人物，54K的数据集|
+|[Traditional_Chinese_roleplay_chat_Dataset](https://huggingface.co/datasets/Tarklanse/Traditional_Chinese_roleplay_chat_Dataset)|将繁体中文为主的各种由ChatGPT生成以及极小部分个人撰写的对话内容整理为Alpaca数据集格式|
+|[Haruhi-Zero-RolePlaying-movie-PIPPA](https://huggingface.co/datasets/silk-road/Haruhi-Zero-RolePlaying-movie-PIPPA)|用于拓展zero-shot角色扮演的角色卡片|
+
+### 我们的优势
