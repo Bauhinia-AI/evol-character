@@ -1,9 +1,7 @@
 # Evol-character 数据集
 [![中文](https://img.shields.io/badge/-%E4%B8%AD%E6%96%87-green)](/README.md)
 [![English](https://img.shields.io/badge/-English-orange)](/README_en.md)
----
 - [Evol-character 数据集](#evol-character-数据集)
-  - [](#)
   - [下载数据集](#下载数据集)
   - [数据生成框架](#数据生成框架)
   - [数据结构](#数据结构)
@@ -11,6 +9,8 @@
     - [现有角色扮演数据集](#现有角色扮演数据集)
     - [我们的优势](#我们的优势)
   - [项目使用与免责声明](#项目使用与免责声明)
+  
+
 ## 下载数据集
 在huggingface中下载数据集: 
 [![English](https://img.shields.io/badge/Download-Huggingface-yellow)](https://huggingface.co/datasets/bai-roleplay/evol-character)
