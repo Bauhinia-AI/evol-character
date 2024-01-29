@@ -40,7 +40,7 @@ Download datasets from huggingface:
                     "role": "user",
                     "content": "你好，请问您是薇莲吗？"
                 }
-                ...
+                // ... 更多对话 ...
             ],
             [
                 {
@@ -51,9 +51,9 @@ Download datasets from huggingface:
                     "role": "user",
                     "content": "你是那个任务一直没完成的赏金猎人吧？"
                 }
-                ...
+                // ... 更多对话 ...
             ]
-            ...
+            // ... 更多多轮对话组 ...
         ]
     }
    ```
@@ -89,7 +89,7 @@ Download datasets from huggingface:
                     }
                 ]
             }
-            ...
+            // ... 更对相关角色设定与对话 ...
         ]
     }
    ```
