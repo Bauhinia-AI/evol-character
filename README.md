@@ -4,12 +4,16 @@
 
 - [Evol-character 数据集](#evol-character-数据集)
   - [下载数据集](#下载数据集)
+  - [与现有数据集对比](#与现有数据集对比)
   - [数据生成框架](#数据生成框架)
   - [数据结构](#数据结构)
 ## 下载数据集
 
 在huggingface中下载数据集: 
 [![English](https://img.shields.io/badge/Download-Huggingface-yellow)](https://huggingface.co/datasets/bai-roleplay/evol-character)
+
+## 与现有数据集对比
+
 
 ## 数据生成框架
 ![Local Image](/assets/flowchart.png)

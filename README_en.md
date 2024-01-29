@@ -4,12 +4,15 @@
 
 - [Evol-character Datasets](#evol-character-datasets)
   - [Download Datasets](#download-datasets)
+  - [Comparison with Existing Datasets](#comparison-with-existing-datasets)
   - [Data Generation Framework](#data-generation-framework)
   - [Data Structure](#data-structure)
 ## Download Datasets
 
 Download datasets from huggingface: 
 [![English](https://img.shields.io/badge/Download-Huggingface-yellow)](https://huggingface.co/datasets/bai-roleplay/evol-character)
+
+## Comparison with Existing Datasets
 
 ## Data Generation Framework
 ![Local Image](/assets/flowchart.png)
