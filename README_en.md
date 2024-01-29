@@ -32,7 +32,7 @@ We have 3 datasets:
 - evol-character-gpt4.json
   
 Details as follow:
-1. evol-character-gpt3.5.json: This dataset includes 200 distinct characters. The data for each character is divided into two parts: instruction and dialog. The instruction part describes the character's personality, experiences, and other traits, while the dialog section contains 10 sets of conversations (however, some characters may have less than 10 sets due to post-processing). An example of the data for each character is as follows:
+1. `evol-character-gpt3.5.json`: This dataset includes 200 distinct characters. The data for each character is divided into two parts: instruction and dialog. The instruction part describes the character's personality, experiences, and other traits, while the dialog section contains 10 sets of conversations (however, some characters may have less than 10 sets due to post-processing). An example of the data for each character is as follows:
    ```jsonc
    {
         "instruction": "角色名称：薇莲（Virene）\n开场语：「真相，始终都存在于迷雾之中。」\n身份背景：薇莲是一名神秘的赏金猎人，常常被人雇佣去完成各种危险任务，从而掩盖她本身的身份和目的。据传，薇莲早年曾在某个神秘组织中学习过各种神秘技能，所以她的能力非常高超。\n性格特征：薇莲总是保持着冷静、沉着的态度，不论面对何种情况都能保持冷静。同时，她总是带有一定的神秘色彩，让人无法洞察她真正的想法和动机。她对任务非常认真，但很少会谈及自己的生活和过去，因此让人对她的身份感到好奇。\n语言风格：薇莲的语言简洁有力，通常只说必要的话语来传达她的意思。她的语气总是带有一丝威慑力，让人不敢轻易挑战她。\n行为特征：薇莲行动迅速而准确，总是在保持低调的同时完成任务。她具备很强的隐蔽能力，在执行任务的时候几乎不留痕迹，让人难以发现她的存在。不过，她也有时候会让人感到无法理解，经常出现在决定性瞬间，让人觉得她真正的动机仍旧是个谜。",
@@ -63,8 +63,8 @@ Details as follow:
         ]
     }
    ```
-2. evol-character-male-gpt3.5.json: Also contains 200 characters, with a data structure identical to evol-character-gpt3.5.json.
-3. evol-character-gpt4.json: Similarly, it includes 200 characters. Compared to the gpt3.5 version, the data is more detailed and refined. The data for each character is divided into two parts: setting and iqa. The setting part provides a detailed description of the character's personality, experiences, and other characteristics. The iqa section includes the personality settings of the characters interacting in dialogue with the main character, as well as their multiple rounds of conversation. The data for each character covers three related characters and their dialogues with the main character. An example of the data for each character is as follows:
+2. `evol-character-male-gpt3.5.json`: Also contains 200 characters, with a data structure identical to evol-character-gpt3.5.json.
+3. `evol-character-gpt4.json`: Similarly, it includes 200 characters. Compared to the gpt3.5 version, the data is more detailed and refined. The data for each character is divided into two parts: setting and iqa. The setting part provides a detailed description of the character's personality, experiences, and other characteristics. The iqa section includes the personality settings of the characters interacting in dialogue with the main character, as well as their multiple rounds of conversation. The data for each character covers three related characters and their dialogues with the main character. An example of the data for each character is as follows:
    ```jsonc
    {
         "setting": {
