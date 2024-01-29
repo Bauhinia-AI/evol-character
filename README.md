@@ -2,31 +2,36 @@
 [![中文](https://img.shields.io/badge/-%E4%B8%AD%E6%96%87-green)](/README.md)
 [![English](https://img.shields.io/badge/-English-orange)](/README_en.md)
 
-## Download Datasets
+## 下载数据集
 
-Download datasets from huggingface: 
-[![English](https://img.shields.io/badge/Download-Huggingface-yellow)]()
+在huggingface中下载数据集: 
+[![English](https://img.shields.io/badge/Download-Huggingface-yellow)](https://huggingface.co/datasets/bai-roleplay/evol-character)
 
-## Data Generation Framework
+## 数据生成框架
 ![Local Image](/assets/flowchart.png)
 
-1. **Seed Characteristic Set and Base Settings**:
-- A manually written seed set contains basic character traits.
-- The large language model (LLM) generates base settings for characters from this seed set.
-2. **Evolution of Character Settings**:
-- A second seed set contains instruction prompts that guide the evolution of character settings.
-- These evolve-character instruction prompts are embedded into an instruction pool.
-- The base settings are sampled and evolved through these prompts, facilitated by the LLM, resulting in evolved settings.
-3. **Feedback Loop and Refinement**:
-- The evolved settings are subject to a mixed evaluation system, which includes both GPT-4 and human reviewers.
-- Feedback from this evaluation is used to iteratively update and refine the seed sets, leading to a polished, fine-grained character setting dataset.
-4. **Role-Playing and Dialogue Generation**:
-- The refined character settings are then used in a self-instruction framework.
-- This results in the generation of role-playing dialogues between characters and users.
+- **种子特征集和基础设定**：
+   - 手工编写的种子集包含基本角色特征。
+   - 大型语言模型（LLM）从这个种子集生成角色的基础设定。
+- **角色设定的演化**：
+  - 第二个种子集包含指导角色设定演化的指令提示。
+  - 这些演化角色的指令提示被嵌入到一个指令池中。基础设定通过这些提示进行采样和演化，由大型语言模型（LLM）促进，从而产生演化后的设定。
+- **反馈循环和精炼**：
+  - 演化后的设定受到一个混合评估系统的监督，该系统包括 GPT-4 和人类审阅者。
+  - 来自此评估的反馈用于迭代更新和精炼种子集，从而形成一个精致、细致的角色设定数据集。
+- **角色扮演和对话生成**：
+  - 经过精炼的角色设定随后用于一个自我指导框架中。
+  - 这导致了角色和用户之间角色扮演对话的生成。
 
 
-## Data Structure
-1. evol-character-gpt3.5.json: This dataset includes 200 distinct characters. The data for each character is divided into two parts: instruction and dialog. The instruction part describes the character's personality, experiences, and other traits, while the dialog section contains 10 sets of conversations (however, some characters may have less than 10 sets due to post-processing). An example of the data for each character is as follows:
+## 数据结构
+我们有三个数据集:
+- evol-character-gpt3.5.json
+- evol-character-male-gpt3.5.json
+- evol-character-gpt4.json
+  
+细节如下：
+1. evol-character-gpt3.5.json: 这个数据集包括200个不同的角色。每个角色的数据分为两部分：instruction和dialog。Instruction部分描述了角色的性格、经历等特征，而dialog部分则包含了10组对话（但有些角色可能因后期处理而少于10组）。每个角色的数据例子如下：
    ```jsonc
    {
         "instruction": "角色名称：薇莲（Virene）\n开场语：「真相，始终都存在于迷雾之中。」\n身份背景：薇莲是一名神秘的赏金猎人，常常被人雇佣去完成各种危险任务，从而掩盖她本身的身份和目的。据传，薇莲早年曾在某个神秘组织中学习过各种神秘技能，所以她的能力非常高超。\n性格特征：薇莲总是保持着冷静、沉着的态度，不论面对何种情况都能保持冷静。同时，她总是带有一定的神秘色彩，让人无法洞察她真正的想法和动机。她对任务非常认真，但很少会谈及自己的生活和过去，因此让人对她的身份感到好奇。\n语言风格：薇莲的语言简洁有力，通常只说必要的话语来传达她的意思。她的语气总是带有一丝威慑力，让人不敢轻易挑战她。\n行为特征：薇莲行动迅速而准确，总是在保持低调的同时完成任务。她具备很强的隐蔽能力，在执行任务的时候几乎不留痕迹，让人难以发现她的存在。不过，她也有时候会让人感到无法理解，经常出现在决定性瞬间，让人觉得她真正的动机仍旧是个谜。",
@@ -57,8 +62,8 @@ Download datasets from huggingface:
         ]
     }
    ```
-2. evol-character-male-gpt3.5.json: Also contains 200 characters, with a data structure identical to evol-character-gpt3.5.json.
-3. evol-character-gpt4.json: Similarly, it includes 200 characters. Compared to the gpt3.5 version, the data is more detailed and refined. The data for each character is divided into two parts: setting and iqa. The setting part provides a detailed description of the character's personality, experiences, and other characteristics. The iqa section includes the personality settings of the characters interacting in dialogue with the main character, as well as their multiple rounds of conversation. The data for each character covers three related characters and their dialogues with the main character. An example of the data for each character is as follows:
+2. evol-character-male-gpt3.5.json: 也包含200个角色，其数据结构与evol-character-gpt3.5.json相同。
+3. evol-character-gpt4.json: 同样含有200个角色，相比于gpt3.5 version数据更加详细和精细。每个角色的数据分为setting和iqa两部分。Setting部分详细描述了角色的性格、经历等特点，而iqa部分则包含了与该角色对话的人物的性格设定，以及他们之间的多轮对话。每个角色的数据中涵盖了三个相关人物及其与该角色之间的对话。每个角色的数据例子如下：
    ```jsonc
    {
         "setting": {

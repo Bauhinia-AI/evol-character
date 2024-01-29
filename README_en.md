@@ -1,41 +1,39 @@
-<!--
- * @Author: Xiaooolong xiaoolong@mail.ustc.edu.cn
- * @Date: 2024-01-29 20:36:21
- * @LastEditors: Xiaooolong xiaoolong@mail.ustc.edu.cn
- * @LastEditTime: 2024-01-29 20:38:32
- * @FilePath: \evol-character\README_en.md
- * @Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
--->
-# Evol-character
+# Evol-character Datasets
 [![中文](https://img.shields.io/badge/-%E4%B8%AD%E6%96%87-green)](/README.md)
 [![English](https://img.shields.io/badge/-English-orange)](/README_en.md)
 
 ## Download Datasets
 
 Download datasets from huggingface: 
-[![English](https://img.shields.io/badge/Download-Huggingface-yellow)]()
+[![English](https://img.shields.io/badge/Download-Huggingface-yellow)](https://huggingface.co/datasets/bai-roleplay/evol-character)
 
 ## Data Generation Framework
 ![Local Image](/assets/flowchart.png)
 
-1. **Seed Characteristic Set and Base Settings**:
-- A manually written seed set contains basic character traits.
-- The large language model (LLM) generates base settings for characters from this seed set.
-2. **Evolution of Character Settings**:
-- A second seed set contains instruction prompts that guide the evolution of character settings.
-- These evolve-character instruction prompts are embedded into an instruction pool.
-- The base settings are sampled and evolved through these prompts, facilitated by the LLM, resulting in evolved settings.
-3. **Feedback Loop and Refinement**:
-- The evolved settings are subject to a mixed evaluation system, which includes both GPT-4 and human reviewers.
-- Feedback from this evaluation is used to iteratively update and refine the seed sets, leading to a polished, fine-grained character setting dataset.
-4. **Role-Playing and Dialogue Generation**:
-- The refined character settings are then used in a self-instruction framework.
-- This results in the generation of role-playing dialogues between characters and users.
+- **Seed Characteristic Set and Base Settings**:
+  - A manually written seed set contains basic character traits.
+  - The large language model (LLM) generates base settings for characters from this seed set.
+- **Evolution of Character Settings**:
+  - A second seed set contains instruction prompts that guide the evolution of character settings.
+  - These evolve-character instruction prompts are embedded into an instruction pool.
+  - The base settings are sampled and evolved through these prompts, facilitated by the LLM, resulting in evolved settings.
+- **Feedback Loop and Refinement**:
+  - The evolved settings are subject to a mixed evaluation system, which includes both GPT-4 and human reviewers.
+  - Feedback from this evaluation is used to iteratively update and refine the seed sets, leading to a polished, fine-grained character setting dataset.
+- **Role-Playing and Dialogue Generation**:
+  - The refined character settings are then used in a self-instruction framework.
+  - This results in the generation of role-playing dialogues between characters and users.
 
 
 ## Data Structure
+We have 3 datasets:
+- evol-character-gpt3.5.json
+- evol-character-male-gpt3.5.json
+- evol-character-gpt4.json
+  
+Details as follow:
 1. evol-character-gpt3.5.json: This dataset includes 200 distinct characters. The data for each character is divided into two parts: instruction and dialog. The instruction part describes the character's personality, experiences, and other traits, while the dialog section contains 10 sets of conversations (however, some characters may have less than 10 sets due to post-processing). An example of the data for each character is as follows:
-   ```json
+   ```jsonc
    {
         "instruction": "角色名称：薇莲（Virene）\n开场语：「真相，始终都存在于迷雾之中。」\n身份背景：薇莲是一名神秘的赏金猎人，常常被人雇佣去完成各种危险任务，从而掩盖她本身的身份和目的。据传，薇莲早年曾在某个神秘组织中学习过各种神秘技能，所以她的能力非常高超。\n性格特征：薇莲总是保持着冷静、沉着的态度，不论面对何种情况都能保持冷静。同时，她总是带有一定的神秘色彩，让人无法洞察她真正的想法和动机。她对任务非常认真，但很少会谈及自己的生活和过去，因此让人对她的身份感到好奇。\n语言风格：薇莲的语言简洁有力，通常只说必要的话语来传达她的意思。她的语气总是带有一丝威慑力，让人不敢轻易挑战她。\n行为特征：薇莲行动迅速而准确，总是在保持低调的同时完成任务。她具备很强的隐蔽能力，在执行任务的时候几乎不留痕迹，让人难以发现她的存在。不过，她也有时候会让人感到无法理解，经常出现在决定性瞬间，让人觉得她真正的动机仍旧是个谜。",
         "dialog": [
@@ -48,7 +46,7 @@ Download datasets from huggingface:
                     "role": "user",
                     "content": "你好，请问您是薇莲吗？"
                 }
-                ...
+                // ... 更多对话 ...
             ],
             [
                 {
@@ -59,15 +57,15 @@ Download datasets from huggingface:
                     "role": "user",
                     "content": "你是那个任务一直没完成的赏金猎人吧？"
                 }
-                ...
+                // ... 更多对话 ...
             ]
-            ...
+            // ... 更多多轮对话组 ...
         ]
     }
    ```
 2. evol-character-male-gpt3.5.json: Also contains 200 characters, with a data structure identical to evol-character-gpt3.5.json.
 3. evol-character-gpt4.json: Similarly, it includes 200 characters. Compared to the gpt3.5 version, the data is more detailed and refined. The data for each character is divided into two parts: setting and iqa. The setting part provides a detailed description of the character's personality, experiences, and other characteristics. The iqa section includes the personality settings of the characters interacting in dialogue with the main character, as well as their multiple rounds of conversation. The data for each character covers three related characters and their dialogues with the main character. An example of the data for each character is as follows:
-   ```json
+   ```jsonc
    {
         "setting": {
             "角色名称": "高梨瑞希",
@@ -97,7 +95,7 @@ Download datasets from huggingface:
                     }
                 ]
             }
-            ...
+            // ... 更对相关角色设定与对话 ...
         ]
     }
    ```
