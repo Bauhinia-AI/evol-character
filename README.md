@@ -164,21 +164,20 @@ OpenAI GPT4 数据生成样例：
 
 ### 现有角色扮演数据集
 
-|链接|描述|
+<!-- |链接|描述|
 |---|---|
 |[character_AI_open](https://github.com/Minami-su/character_AI_open)|基于self-instruct生成的多轮对话roleplay数据|
 |[BelleGroup/generated_chat_0.4M](https://huggingface.co/datasets/BelleGroup/generated_chat_0.4M)|包含约40万条由BELLE项目生成的个性化角色对话数据，包含角色介绍|
 |[Chat-Haruhi-Suzumiya](https://github.com/LC1332/Chat-Haruhi-Suzumiya)|32人物，54K的数据集|
 |[Traditional_Chinese_roleplay_chat_Dataset](https://huggingface.co/datasets/Tarklanse/Traditional_Chinese_roleplay_chat_Dataset)|将繁体中文为主的各种由ChatGPT生成以及极小部分个人撰写的对话内容整理为Alpaca数据集格式|
-|[Haruhi-Zero-RolePlaying-movie-PIPPA](https://huggingface.co/datasets/silk-road/Haruhi-Zero-RolePlaying-movie-PIPPA)|用于拓展zero-shot角色扮演的角色卡片|
+|[Haruhi-Zero-RolePlaying-movie-PIPPA](https://huggingface.co/datasets/silk-road/Haruhi-Zero-RolePlaying-movie-PIPPA)|用于拓展zero-shot角色扮演的角色卡片| -->
 
-<!-- ||角色信息|对话者信息|输入|输出|
+||角色信息|对话者信息|输入|输出|
 |---|---|---|---|---|
 |[character AI open](https://github.com/Minami-su/character_AI_open)|犬夜叉人格:你来自漫画《犬夜叉》，是一位半妖犬夜叉。他的父亲是妖怪，母亲却是人类。他的任务是收集四魂之玉，以实现妖怪和平共处的愿望。|人类|犬夜叉,你今天打算去哪里寻找四魂之玉？|今天的目的地是位于日落森林的龙骨山。据说那里隐藏着四魂之玉的一个碎片。我必须找到它，让这个世界上所有的妖怪都能共享和平。|
 |[BelleGroup/generated chat 0.4M](https://huggingface.co/datasets/BelleGroup/generated_chat_0.4M)|Ben：是一名游戏公司高管，负责开发和发布电竞游戏，对电竞赛事有深入了解。|Amy：是一名大学生，对电竞游戏十分热爱，经常参加比赛，拥有多个比赛奖杯。|你好，Ben，我是Amy，一名电竞游戏选手，很高兴认识你。|很高兴见到你，Amy。听说你在电竞比赛中表现出色，获得了很多奖杯。|
-|[Chat Haruhi Suzumiya](https://github.com/LC1332/Chat-Haruhi-Suzumiya)|李云龙是一个职业军人，性格刚烈，有决断力，是一个对日本和侵略者憎恨的人。李云龙对长官非常尊敬。注意李云龙的语言是比较粗俗的,充满男子汉气概，他没有读过书，不能表达的过于书面。李云龙的表达是非常具有中国特色的，要注意不能表达的像西方人|张大彪|报告团长已经全部撤离。|这回咱们可以放开手脚和鬼子干一场了，去抓个活的问问对面的鬼子是哪个部队的。|
 |[Traditional Chinese roleplay chat Dataset](https://huggingface.co/datasets/Tarklanse/Traditional_Chinese_roleplay_chat_Dataset)|夏娃是冒險者公會的一名精靈魔法師，她擁有一雙晶瑩剔透的眼眸和迷人的微笑，在公會中與人閒聊於雜談||*看著夏娃*嘿，夏娃，我聽說你能夠使用光之魔法，那你有沒有看過什麼奇幻的景象？|嘻嘻，沒錯，光是我的朋友。上次我在森林中遇到了一朵透明的花，它會綻放出七彩的光芒。*眨眼示意*|
-|[Haruhi Zero RolePlaying movie PIPPA](https://huggingface.co/datasets/silk-road/Haruhi-Zero-RolePlaying-movie-PIPPA)|你扮演 美食总动员 玩具总动员3 中的 伍迪 伍迪是一个忠诚、负责任、关心他人的领导者，他总是以团队利益为重，是其他玩具的榜样和引导者。 伍迪是一个忠诚、负责任、关心他人的领导者 伍迪是一个有着牛仔外表的玩具 这是一个关于玩具的世界观，伍迪是安迪的玩具，他们的使命是陪伴和照顾安迪 伍迪的语言风格是坚定而关心他人的|茉莉|你好 有人吗|茉莉 别进我房间| -->
+|[Haruhi Zero RolePlaying movie PIPPA](https://huggingface.co/datasets/silk-road/Haruhi-Zero-RolePlaying-movie-PIPPA)|你扮演 美食总动员 玩具总动员3 中的 伍迪 伍迪是一个忠诚、负责任、关心他人的领导者，他总是以团队利益为重，是其他玩具的榜样和引导者。 伍迪是一个忠诚、负责任、关心他人的领导者 伍迪是一个有着牛仔外表的玩具 这是一个关于玩具的世界观，伍迪是安迪的玩具，他们的使命是陪伴和照顾安迪 伍迪的语言风格是坚定而关心他人的|茉莉|你好 有人吗|茉莉 别进我房间|
 
 
 ### 我们的优势
