@@ -8,15 +8,13 @@
   - [数据生成框架](#数据生成框架)
   - [数据结构](#数据结构)
   - [与现有数据集对比](#与现有数据集对比)
-    - [现有数据集](#现有数据集)
+    - [现有角色扮演数据集](#现有角色扮演数据集)
     - [我们的优势](#我们的优势)
 ## 下载数据集
 
 在huggingface中下载数据集: 
 [![English](https://img.shields.io/badge/Download-Huggingface-yellow)](https://huggingface.co/datasets/bai-roleplay/evol-character)
 
-
-1270个角色来自于对PIPPA数据集的翻译
 ## 数据生成框架
 ![Local Image](/assets/flowchart.png)
 
