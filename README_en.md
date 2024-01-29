@@ -1,3 +1,11 @@
+<!--
+ * @Author: Xiaooolong xiaoolong@mail.ustc.edu.cn
+ * @Date: 2024-01-29 20:36:21
+ * @LastEditors: Xiaooolong xiaoolong@mail.ustc.edu.cn
+ * @LastEditTime: 2024-01-29 20:38:32
+ * @FilePath: \evol-character\README_en.md
+ * @Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
+-->
 # Evol-character
 [![中文](https://img.shields.io/badge/-%E4%B8%AD%E6%96%87-green)](/README.md)
 [![English](https://img.shields.io/badge/-English-orange)](/README_en.md)
