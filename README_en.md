@@ -41,6 +41,8 @@ We have 3 datasets:
 - evol-character-gpt3.5.json
 - evol-character-male-gpt3.5.json
 - evol-character-gpt4.json
+
+We first generated the data `evol-character-gpt3.5.json` in which the majority of the character roles are female. Therefore, we supplemented by generating male character data `evol-character-male-gpt3.5.json`.
   
 Details as follow:
 1. `evol-character-gpt3.5.json`: This dataset includes 200 distinct characters. The data for each character is divided into two parts: instruction and dialog. The instruction part describes the character's personality, experiences, and other traits, while the dialog section contains 10 sets of conversations (however, some characters may have less than 10 sets due to post-processing). An example of the data for each character is as follows:

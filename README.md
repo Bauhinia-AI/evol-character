@@ -89,6 +89,8 @@ OpenAI GPT4 数据生成样例：
 - evol-character-gpt3.5.json
 - evol-character-male-gpt3.5.json
 - evol-character-gpt4.json
+
+我们在首先生成了数据`evol-character-gpt3.5.json`，该部分数据角色大多为女性角色，因此，我们补充生成了男性角色数据`evol-character-male-gpt3.5.json`。
   
 细节如下：
 1. `evol-character-gpt3.5.json`: 这个数据集包括200个不同的角色。每个角色的数据分为两部分：instruction和dialog。Instruction部分描述了角色的性格、经历等特征，而dialog部分则包含了10组对话（但有些角色可能因后期处理而少于10组）。每个角色的数据结构示例如下：
