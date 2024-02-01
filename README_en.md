@@ -8,6 +8,7 @@
   - [Comparison with Existing Datasets](#comparison-with-existing-datasets)
     - [Existing Role-playing Datasets](#existing-role-playing-datasets)
     - [Our Advantages](#our-advantages)
+  - [Contact Us](#contact-us)
   - [Terms of Use and Disclaimer Statement](#terms-of-use-and-disclaimer-statement)
   
 
@@ -142,6 +143,10 @@ Details as follow:
   
 - **Universal Role-Playing Data Generation Framework**: We offer a framework for generating role-playing data, maximizing the potential of the OpenAI API. This framework, currently under testing and optimization, is designed for data fine-tuning and RAG. It will be released soon.
 
+## Contact Us
+If you have any inquiries, please contact us at:
+
+Email: info@bauhiniaai.com
 ## Terms of Use and Disclaimer Statement
 This project adheres to the Apache 2.0 License. Under this license, you are authorized to freely use the code within this project for commercial activities. However, if the project involves copyright of specific characters, or is subject to other related agreements (such as interface usage protocols, etc.), you must strictly comply with the terms of these agreements when using the code.
 
